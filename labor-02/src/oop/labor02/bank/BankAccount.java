@@ -4,6 +4,7 @@ public class BankAccount {
     private String accountNumber;
     private double balance;
 
+    // constructor
     public BankAccount(String accountNumber) { // this is a method
         this.accountNumber = accountNumber;
         this.balance = 0; // this is not necessary
