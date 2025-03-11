@@ -1,13 +1,6 @@
 package oop.labor03.oneToMany;
 
 public class BankAccount {
-    // constant
-    public static final int MAX_ACCOUNTS = 10;
-    // number of accounts
-    private int numAccounts;
-    // an array for all the accounts
-    private BankAccount accounts[] = new BankAccount[ MAX_ACCOUNTS ];
-
     private String accountNumber;
     private double balance;
 

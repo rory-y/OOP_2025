@@ -22,6 +22,7 @@ public class Customer {
         return account;
     }
 
+    // setters
     public void setLastname(String lastName){
         this.lastName = lastName;
     }
