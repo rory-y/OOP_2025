@@ -33,8 +33,8 @@ public class Main {
         customer2.getAccount(2).deposit(700);
 
         // closing the first account of customer1
-        customer1.closeAccount(customer1.getAccount(0),0);
-        customer2.closeAccount(customer2.getAccount(2),2);
+        customer1.closeAccount(0);
+        customer2.closeAccount(2);
 
         // print all customers and accounts again
         System.out.println(customer1);

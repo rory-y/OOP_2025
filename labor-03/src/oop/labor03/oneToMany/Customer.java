@@ -48,10 +48,13 @@ public class Customer {
             numAccounts++;
         }
     }
-    public void closeAccount(BankAccount account, int accountNumber){
+    public void closeAccount(int accountNumber){
         if(this.accounts[accountNumber] != null){
-            this.accounts[accountNumber] = null;
-//            this.numAccounts--;
+            for(int i = numAccounts; i < numAccounts - 1; i++) {
+                accounts[i] = accounts[i +1];
+            }
+            numAccounts--;
+            accounts[numAccounts] = null;
         }
         else{
             System.out.println("Account number " + numAccounts + " does not exist\n");
