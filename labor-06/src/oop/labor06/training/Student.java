@@ -26,15 +26,16 @@ public class Student {
     public String getLastName() {
         return lastName;
     }
+    // setters
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     // toString
 
     @Override
     public String toString() {
-        return "Student{" +
-                "ID='" + ID + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return "Student: " + firstName + " " + lastName + "\n\t ID: " + ID + "\n";
     }
 }
